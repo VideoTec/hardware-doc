@@ -1,0 +1,57 @@
+http://www.zhihu.com/question/20448164
+
+NTFS 在 MAC 中只能读取不能写入
+HFS+ 在 PC 中不能认读此文件格式的硬盘或移动设备
+
+在Mac 分区，1区为Mac Osx （日志），2区格式化为Windows格式
+http://www.douban.com/group/topic/26867886/
+如果要分成两个分区，ntfs 和 nfs+ 并存。
+先 mac 格式化，再到 windows 格式化，不能倒过来
+1. 在mac下格式化 nfs+
+2. 在windows再格式化剩下的分区
+
+影视从业者，频繁穿插于mac于pc之间者，大批量拷贝大型文件者，请用exfat
+
+安装macdrive等可以解决pc端读写hfs+格式的问题，
+安装macfuse等可以解决mac端读写ntfs的问题，但会
+pc端极易导致系统蓝屏，mac端死机等不稳定因素，
+如果获取方法正当需要缴纳另一部分软件费用
+
+https://zh.wikipedia.org/wiki/ExFAT
+exFAT（Extended File Allocation Table），又名FAT64，
+是一种较适合于闪存的文件系统，
+最先从微软的Windows Embedded CE 6.0引入这种文件系统，
+后又延伸到Windows Vista Service Pack 1操作系统中[3]。
+由于NTFS文件系统的一些数据格式规定所限，对快存存储器而言exFAT显得更具优势
+
+对于单文件超过4 GB的跨系统用户来说，exFAT很好地提供了Windows（XP需要SP2和更新）、Mac OS X和Linux之间的兼容性
+
+Windows XP SP3之前的Windows暂时不支持exFAT，Windows XP可以安装修改更新KB955704来支持exFAT[9]，
+Linux操作系统需要通过exfat工具支持exFAT[10]，
+Mac OS X可通过升级至10.6.5来全面支持exFAT
+
+http://macuknow.com/node/7302
+FAT32 一直以來都是 Mac 與 PC 交流最好的格式，速度與穩定度都相當的不錯
+但是 FAT32 有著磁碟大小 32GB 與單一檔案不能超過 4GB（232 位元組） 的限制
+而現在我們有了更簡單的選擇了： exFAT
+
+http://bbs.feng.com/read-htm-tid-6708730.html
+作为硬盘来说，NTFS与Mac OS 扩展(日志式)是最佳的。 但是
+NTFS在MAC里，原生只读，不能写入。 
+Mac OS 扩展(日志式) 在Win里就连读都是不能的。 
+所以作为两个系统都可以读写的FAT家族就成了首选。
+
+说exfat好的人小心明天就丢数据
+说用NTFS插件的人也小心明天丢数据
+
+跟我的一样。。。推荐exfat。。当然最好的还是hfs+了
+
+其实你的问题我也遇到过， fat其实是最简单，两家也都认，但是大文件的读写绝对愁煞你。 ntfs吧，对于苹果来说绝对属于后娘养的，你想支持，行，自己掏钱买第三方软件支持吧。 
+可以这么说 唯一能够被双方认可的 也只有EXFAT 有人说稳定性差，我从未觉得！
+我已经平安的用了将近一年了（话说我属于用东西很泼辣的人，在我的辣手下都没出过问题……）
+
+http://bbs.feng.com/read-htm-tid-6762848.html
+不用ex这个格式，我直接装个paragon的NTFS插件，然后硬盘我就win和Mac共享，
+目前还没发现啥问题，我的硬盘是希捷的1T
+
+建议还是NTFS格式，在Mac装插件即可读写。ExFAT在Mac下读取速度一般

@@ -1,0 +1,5 @@
+硬盘
+S.M.A.R.T的全称为“Self-Monitoring Analysis and Reporting Technology”，即“自我监测、分析及报告技术”
+该技术所需数据被存放在硬盘物理盘面最前面的磁道中，
+由硬盘制作商将相关管理程序和数据该磁道中，包括加解密程序，自监控程序，自修复程序等，
+主机的监控软件可以通过“SMART RETURN STATUS”的命令读取S.M.A.R.T.信息，且这些信息不允许被用户修改。
