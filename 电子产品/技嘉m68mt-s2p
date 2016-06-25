@@ -1,0 +1,18 @@
+技嘉M68MT最大支持4G DDR3单条内存的，因为这个主板比较老的了，
+最大支持总容量8G内存，就是两条4G组成的8G，所以只能用单条4G DDR3内存
+
+ganged[英]['ɡæŋd] [美]['ɡæŋd] 成组的，联动
+技嘉GA-M68MT-S2P 支持内存双通道吗
+支持
+开启方法：
+BIOS | MB Intelligent Tweaker(M.I.T.) (频率/电压控制) | DRAM Configuration | DCTs Mode
+Ganged		设定内存控制模式为一个双通道。
+Unganged	设定内存控制模式为两个单通道。(预设值)
+
+Virtualization (虚拟化技术)
+此选项提供您选择是否启动虚拟化技术。虚拟化技术让您可以在同一平台的独立数据
+分割区,执行多个操作系统和应用程序。(预设值:Enabled)
+
+USB Resume from Suspend (由USB设备唤醒系统)
+此选项提供您选择是否允许系统在S3休眠状态时,可以经由支持唤醒功能的USB设备唤
+醒系统。(预设值:Enabled)
